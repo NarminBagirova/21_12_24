@@ -1,3 +1,1 @@
-1: Coffee Maker, Cost Price: 40.0, Sale Price: 60.0
-2: Blender, Cost Price: 50.0, Sale Price: 75.0
-3: Air Conditioner, Cost Price: 300.0, Sale Price: 400.0
+[{"Id":0,"Name":"ghf","CostPrice":56.0,"SalePrice":76.0}][{"Id":2,"Name":"jhsd","CostPrice":96.0,"SalePrice":99.0}]

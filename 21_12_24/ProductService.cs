@@ -10,15 +10,12 @@ namespace _21_12_24
 {
     public class ProductService
     {
-        private string FilePath = @"C:\Users\ACER\source\repos\21_12_24\example.txt";
-        private static int _nextId = 0;
+        private string FilePath = @"C:\Users\Narminjb\Source\Repos\21_12_24\21_12_24\example.txt";
 
         public void Create(Product product)
         {
             List<Product> products = new List<Product>();
             if (products == null) products = new List<Product>();
-
-            product.SetId(_nextId++);
 
             products.Add(product);
             WriteToFile(products);
@@ -60,7 +57,7 @@ namespace _21_12_24
         private void WriteToFile(List<Product> products)
         {
             var json = JsonConvert.SerializeObject(products);
-            File.WriteAllText(FilePath, json);
+            File.AppendAllText(FilePath, json);
         }
     }
 }
